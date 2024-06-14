@@ -174,13 +174,14 @@ button{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap:32px
 }
 
 .grid-container{
     background-color: #e5e7eb;
-    width:max(800px,80%);
+    min-width:800px;
+    width: 80%;
     padding: 32px;
     height: auto;
 }
@@ -200,4 +201,56 @@ button{
 .card img{
     width: 1.5rem;
     height: 1.5rem;
+}
+
+.main{
+    display: flex;
+}
+
+.announcements{
+    width: 400px;
+    background-color: #ffffff;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+}
+
+.announcements div{
+    padding-bottom: 16px;
+    box-shadow: 0px 2px #e5e7eb;
+}
+
+.main-sidebar{
+    padding: 32px;
+}
+
+.title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.trending > div{
+    display: grid;
+    grid-template-columns: 64px 200px;
+    gap: 16px;
+}
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.trending-message{
+    margin-top: 8px;
+}
+
+.message{
+    color:#6b7280;
 }
