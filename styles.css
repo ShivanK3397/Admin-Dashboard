@@ -19,6 +19,9 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   height: 100vh;
+  display: flex;
+  font-family: Roboto, sans-serif;
+
 }
 /*
   5. Improve media defaults
@@ -61,13 +64,14 @@ p, h1, h2, h3, h4, h5, h6 {
 .sidebar{
     color: #ffffff;
     font-weight: bold;
-    font-family: Roboto,sans-serif;
     background-color: #0ea5e9;
     padding: 16px;
     display: grid;
     grid-template-rows: repeat(12,36px);
     height: 100%;
     width: 250px;
+    min-width: 250px;
+    
     
 
 }
@@ -80,4 +84,81 @@ p, h1, h2, h3, h4, h5, h6 {
 .sidebar-item{
   margin-left: 8px ;
 }
+
+
+header img{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+header{
+    display: grid;
+    gap: 48px;
+    width: 100%;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 48px 48px;
+    padding: 32px;
+    height: max-content;
+    box-shadow: 6px 0px 8px #6b7280;
+
+}
+
+header div{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+img[src$="jpg"]{
+    
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+}
+
+
+input{
+    flex: 1;
+    border-radius: 16px;
+    height: 24px;
+    background-color: #e5e7eb;
+    border: none;
+    width:80%;
+    
+}
+
+.header-welcome-message{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+.search{
+    align-items: center;
+}
+
+
+.welcome-container{
+    display: grid;
+    grid-template-columns: 64px 270px;
+    justify-self: start;
+    align-content: center;
+    align-items: center;
+  
+    
+}
+
+.header-top-left{
+  align-items: center;
+  font-weight: bold;
+}
+
+button{
+    padding: 8px 32px;
+    border-radius: 32px;
+    background-color: #0ea5e9;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
 
