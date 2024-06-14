@@ -18,9 +18,9 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  height: 100vh;
   display: flex;
   font-family: Roboto, sans-serif;
+  background-color: #e5e7eb;
 
 }
 /*
@@ -68,9 +68,10 @@ p, h1, h2, h3, h4, h5, h6 {
     padding: 16px;
     display: grid;
     grid-template-rows: repeat(12,36px);
-    height: 100%;
+    min-height: 100vh;
     width: 250px;
     min-width: 250px;
+
     
     
 
@@ -99,7 +100,9 @@ header{
     grid-template-rows: 48px 48px;
     padding: 32px;
     height: max-content;
-    box-shadow: 6px 0px 8px #6b7280;
+    background-color: #ffffff;
+    position: relative;
+    box-shadow: 0px 5px 8px rgb(120 120 120 /40%);
 
 }
 
@@ -161,4 +164,40 @@ button{
     border: none;
 }
 
+.card{
+    height:250px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px 16px 32px 16px;
+    box-shadow: -8px 0px goldenrod;
+}
 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:32px
+}
+
+.grid-container{
+    background-color: #e5e7eb;
+    width:max(800px,80%);
+    padding: 32px;
+    height: auto;
+}
+
+.main-message{
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.image-container{
+    display: flex;
+    justify-content: end;
+    margin-top: 48px;
+    gap: 16px;
+}
+.card img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
